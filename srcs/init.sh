@@ -1,5 +1,4 @@
 # Nginx
-service nginx start
 ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/wordpress
 
 # MariaDB
@@ -16,3 +15,4 @@ mysql --user=root <<_EOF_
 _EOF_
 
 service php7.3-fpm start
+service nginx restart
