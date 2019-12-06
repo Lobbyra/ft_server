@@ -1,6 +1,6 @@
 server {
 	listen 80;
-	root /var/www/wordpress;
+	root /var/www/html/wordpress;
 	server_name wordpress.local;
 
 	location / {

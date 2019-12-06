@@ -16,5 +16,3 @@ mysql --user=root <<_EOF_
 _EOF_
 
 service php7.3-fpm start
-
-read -n 999
