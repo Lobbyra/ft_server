@@ -51,7 +51,6 @@ ADD . /home/
 WORKDIR /home/
 
 ADD ./srcs/wordpress /etc/nginx/sites-available/
-ADD ./srcs/wordpress_php /etc/php/7.2/fpm/pool.d/
 ADD ./srcs/wp-config.php /var/www/wordpress
 ADD	./srcs/default.conf /etc/nginx/conf.d/default.conf
 

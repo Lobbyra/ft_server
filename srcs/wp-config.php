@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '9}p(T.j{_fcbO] zB8tBX g9PX5=4+_L<|FlN)YyEfCTk5A#nwpPnT$g`V=-Rg9@');
-define('SECURE_AUTH_KEY',  'qDG6:}&-X4gJ*#W8}=|^L%w)>TS8/zee-~d,H5*x9J]P=IWZw{)?AW,BRQpchSpi');
-define('LOGGED_IN_KEY',    ' Z<{(16Ls$AvF/~}d5p/Wh*C-EV^wKFEAQ%#U/UXG$e|^dOfSf-xDi]-4L-(7v*J');
-define('NONCE_KEY',        'Q|KgLw-1{HJ 1_Y<F+on&PpCfJD<YXf/$#NI1mk%1oW,mT)qWQm@n12NCOA[Hu-|');
-define('AUTH_SALT',        'hx}0s-mmY.!r0a1={sJzu_6@22iax[+KHqpYKP*Uq+2jtu@/;-mil.;X0Zuy@a#%');
-define('SECURE_AUTH_SALT', 'T1x>u+rT*+1rQv5}+sK_W^>!<Y%AsjN-NFc67TRy+_g0SAzz6iu<P}E*6nSu*kwO');
-define('LOGGED_IN_SALT',   '_]c|G<W,e19fKmt6jDw25|._5)~Wj?RA:@f[a#ez*d(ID5-N}c(( _.[/oyQGE=L');
-define('NONCE_SALT',       '|tqMz1eqZtC.ZC/kbW3S[6+pf6N;N|13B|RwM+1IvJEV> %g_0VJ>3^ismYFJGCS');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 /**#@-*/
 
 /**
