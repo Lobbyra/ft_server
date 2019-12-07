@@ -1,5 +1,9 @@
 FROM debian:buster
 
+# Copy my source files to use in debian
+ADD . /home/
+WORKDIR /home/
+
 # Dependancies installation
 ##
 RUN apt update	\
@@ -10,6 +14,7 @@ RUN apt update	\
 ##
 RUN apt install -y nginx
 
+ADD ./srcs/default /etc/nginx/sites-available/
 ##
 
 # MariaDB installation
@@ -44,6 +49,9 @@ RUN apt install -y	\
 	&& chown -R www-data:www-data /var/www/html/wordpress		\
 	&& chmod -R 755 /var/www/html/wordpress						\
 	&& rm /var/www/html/index.nginx-debian.html					
+
+ADD ./srcs/wordpress /etc/nginx/sites-available/
+ADD ./srcs/wp-config.php /var/www/html/wordpress
 ##
 
 # PHPMYADMIN install
@@ -58,15 +66,14 @@ RUN wget https://files.phpmyadmin.net/phpMyAdmin/4.9.2/phpMyAdmin-4.9.2-english.
 
 ##
 
-# Copy my source files to use in debian
-ADD . /home/
+## SSL part
 
-# Equivalent to RUN cd /home
-WORKDIR /home/
+ADD ./srcs/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
+ADD ./srcs/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
 
-ADD ./srcs/wordpress /etc/nginx/sites-available/
-ADD ./srcs/default /etc/nginx/sites-available/
-ADD ./srcs/wp-config.php /var/www/html/wordpress
+##
+
+
 
 # Execute my initialisation script to run services when the contenairs is started
 CMD ["bash", "./srcs/init.sh"]
