@@ -68,8 +68,8 @@ RUN wget https://files.phpmyadmin.net/phpMyAdmin/4.9.2/phpMyAdmin-4.9.2-english.
 
 ## SSL part
 
-ADD ./srcs/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
-ADD ./srcs/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
+ADD ./srcs/default_server.key /etc/ssl/private/default_server.key
+ADD ./srcs/default_server.crt /etc/ssl/certs/default_server.crt
 
 ##
 
