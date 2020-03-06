@@ -1,6 +1,13 @@
-# ft_server
+# Introduce to Docker with ft_server
 
-> At starting of this build, it will create a webserver with wordpress with SSL.
+![](https://media.giphy.com/media/rCQTCy4rvuxR6/giphy.gif)
 
-> Yes it is not a good usecase of Docker but this is my school project.  
-This project introduce me how work a nginx webserver, phpmyadmin, docker, mariaDB, SSL and wordpress.
+Notions discovered in this project :
+- Docker (build & run)
+- Nginx basic setup
+- MariaDB setup
+- Wordpress local hosting
+
+This project is part of 42 school at Paris and this project took me one week.
+
+At the run of this repo it will install and run LAMP services.
